@@ -8,6 +8,13 @@ import babel from '@rollup/plugin-babel'
 export default [
     {
         ...base,
+        output: [
+            ...base.output,
+            {
+                file: './dist/reactivity.cjs.js',
+                format: 'cjs',
+            }
+        ],
         plugins: [
             nodeResolve({
                 extensions: ['.js', '.ts'],

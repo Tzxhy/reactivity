@@ -2,8 +2,9 @@
     "name": "@tzxhy/reactivity",
     "version": "0.0.1-alpha.1",
     "description": "",
-    "main": "index.js",
-    "module": "dist/index.es.js",
+    "main": "dist/reactivity.cjs.js",
+    "module": "dist/reactivity.es.js",
+    "browser": "dist/reactivity.umd.js",
     "scripts": {
         "start": "rollup -w --config script/rollup.dev.js",
         "build": "rollup --config script/rollup.prd.js",
@@ -12,6 +13,7 @@
     "keywords": [],
     "author": "tanzhixuan",
     "license": "ISC",
+    "types": "dist/index.d.ts",
     "devDependencies": {
         "@babel/core": "^7.12.10",
         "@babel/plugin-transform-runtime": "^7.12.10",
